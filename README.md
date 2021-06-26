@@ -47,3 +47,35 @@ pip install bit
 
 More details of  the Python Bit library can be found here: (https://ofek.dev/bit)
 
+## Simple Smart Contract
+The Solidarity Code [simpleSmartContract.sol](https://github.com/maarouf-yassine/Blockchain-and-Cryptocurrencies/blob/main/simpleSmartContract.sol) is a simple smart contract using the Solidity programming language and the [Remix Ethereum IDE](http://remix.ethereum.org/).
+
+The smart contract should store the grades of students in a class. Student information consists of a name, an ID number, and an email address. Assume that there are up to 25 students, and that each student has grades for four assignments and a final exam.Each assignment or exam grade is an integer between 0 and 100.
+
+The smart contract should store all the above information, and should calculate the following weighted sum and the course letter grade:
+
+weighted sum = 0.15×(sum of assignment grades) + 0.4×(final exam grade)
+
+The course letter grade is assigned to each student in accordance with the following table:
+
+| Weighted Sum  | Course Grade  |
+| ------------- |:-------------:|
+| <60           | F             |
+| 60 to 69      | D             |
+| 70 to 79      | C             |
+| 80 to 89      | B             |
+| 90 to 100     | A             |
+
+### Usage
+Compile and deploy the smart contract on the Remix Ethereum IDE on the following link: http://remix.ethereum.org
+
+## ERC20 Based Smart Contract
+The Solidarity Code [smartContractToken.sol](https://github.com/maarouf-yassine/Blockchain-and-Cryptocurrencies/blob/main/smartContractToken.sol) is based on the ERC20 Template of the OPENZEPPELIN Implementation. The code represents a smart contract that could be deployed on the Ethereum main-net. In this smart contract there is the LEBDON Token. 
+Any user with an Ethereum wallet could use this token. Users can transfer LEBDON tokens to NGOs. This transfer is implemented internally by the `transfer` function in the .sol file. Users will be also 
+able to transfer tokens on behalf of other users if they were authorized to do so, and this is implemented internally using the `transferFrom` function. 
+Every successful transaction or transfer operation is registered on the blockchain, thus allowing full transparency and ability to track the money spent.
+
+### Usage
+Compile and deploy the smart contract on the Remix Ethereum IDE on the following link: http://remix.ethereum.org
+
+Follow this [tutorial](https://www.youtube.com/watch?v=GDq7r1n9zIU) to see how you can send and receive tokens from different Metamask accounts.
